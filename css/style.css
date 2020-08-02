@@ -168,6 +168,19 @@ body.lock {
   display: none;
 }
 
+.menu__list li:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .menu__list li:after {
   content: "";
   position: absolute;
@@ -405,6 +418,12 @@ body.lock {
       -ms-flex: 0 0 6.12648%;
           flex: 0 0 6.12648%;
   z-index: 51;
+}
+
+@media (min-width: 767.98px) {
+  .menu__list li:hover:before {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
