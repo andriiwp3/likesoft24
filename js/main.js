@@ -193,7 +193,7 @@ if (iconMenu) {
 
 /**
  * 
- * [description]
+ * Логика для блока с категориями
  * 
  */
 $('.categories__title').on('click', () => {
