@@ -688,6 +688,10 @@ body.lock {
   border-radius: 10px;
 }
 
+.form__error {
+  margin: 0px 0px 10px 0px;
+}
+
 /* Slider */
 
 .slick-slider {
@@ -874,6 +878,9 @@ body.lock {
   border-bottom: 1px solid #ffffff;
   margin: 0px 0px 30px 0px;
   padding: 0px 0px 5px 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   color: #ffffff;
 }
 
@@ -904,6 +911,10 @@ body.lock {
 .form-foo__inputs input::placeholder {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.form-foo__inputs input.err {
+  border-bottom: 1px solid #f34949;
 }
 
 .form-foo__name {
@@ -1822,6 +1833,13 @@ body.lock {
   padding: 10px 12px 10px 12px;
   border: 1px solid rgba(121, 181, 205, 0.8);
   margin: 0px 0px 20px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form-testimonial-single-product__inputs input.err {
+  border: 1px solid #f34949;
 }
 
 .form-testimonial-single-product__testimonial {
@@ -2469,6 +2487,10 @@ body.lock {
             flex-direction: column-reverse;
   }
 
+  .product-cart__img {
+    width: 120px;
+  }
+
   .product-cart__title {
     margin: 0px 0px 15px 0px;
   }
@@ -2659,6 +2681,12 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 65.6383%;
             flex: 0 0 65.6383%;
+  }
+
+  .product-cart__sum {
+    position: absolute;
+    left: 65.6383%;
+    top: 70%;
   }
 
   .product-cart__remove {
